@@ -1,14 +1,22 @@
 {
-  "name": "static-site",
+  "name": "challenge-9",
   "version": "1.0.0",
-  "description": "",
+  "description": "Challenge assignment 9: README generator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bpkaufman4/challenge-9.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bpkaufman4/challenge-9/issues"
+  },
+  "homepage": "https://github.com/bpkaufman4/challenge-9#readme",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^8.1.2"
   }
 }
