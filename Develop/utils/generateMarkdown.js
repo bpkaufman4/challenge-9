@@ -3,12 +3,12 @@
 function renderLicenseBadge(license) {}
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
+const generateMarkdown = (userName, projectTitle) => {
   return `
-  # ${data.title}
-
-  ## ${data.description} 
-`;
-}
+  # ${userName}
+  
+  ## ${projectTitle}
+  `
+  };
 
 module.exports = generateMarkdown;
