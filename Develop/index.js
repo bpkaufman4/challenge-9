@@ -1,7 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMD = require('./utils/generateMarkdown')
+
+const markdownDataArgs = process.argv.slice(2, process.argv.length);
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -72,12 +73,14 @@ const questions = [
   }];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const printMarkdownData = (markdownDataArr) => {
+  markdownDataArr.forEach(profileItem => console.log(profileItem));
+};
+
+printMarkdownData(markdownDataArgs);
 
 // TODO: Create a function to initialize app
-function init() {
-  return inquirer.prompt(questions);
-}
+
 
 // Function call to initialize app
-init();
+
