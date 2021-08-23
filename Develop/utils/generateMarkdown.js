@@ -18,27 +18,40 @@ const generateMarkdown = templateData => {
 
   return `
   # ${templateData.title} by ${templateData.name}
+  ${licenseTag}
+
+  ## Table of Contents
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [Testing](#testing)
+  - [License](#license)
+  - [Questions](#questions)
   
-  ## Installation
+  
+  ### Installation
   ${templateData.install}
 
 
-  ## Usage 
+  ### Usage 
   ${templateData.usage}
 
 
-  ## Contributing
+  ### Contributing
   ${templateData.contributing}
 
 
-  ## Testing
+  ### Testing
   ${templateData.test}
 
 
-  ## License
+  ### License
   ${templateData.license}
 
-  ${licenseTag}
+  ### Questions
+  Github: https://github.com/${templateData.github} 
+
+  Email: ${templateData.email}
   `
 
 

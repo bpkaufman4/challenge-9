@@ -91,6 +91,32 @@ const questions = [
     name: 'license',
     message: 'What license would you like to add?',
     choices: ['Apache License v2.0', 'GNU General Public License v3.0', 'MIT License']
+  },
+  {
+    type: 'input',
+    name: 'github',
+    message: 'What is your Github username?',
+    validate: nameInput => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log('Please enter your Github username');
+        return false;
+      }
+    }
+  },
+  { 
+    type: 'input',
+    name: 'email',
+    message: 'What is your email address?',
+    validate: nameInput => {
+      if (nameInput) {
+        return true;
+      } else {
+        console.log('Please enter your email address.');
+        return false;
+      }
+    }
   }];
 
   const promptUser = () => {
